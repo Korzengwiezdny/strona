@@ -21,30 +21,7 @@ export default function Projects() {
       image: '/api/placeholder/400/250',
       featured: true
     },
-    {
-      title: 'Task Management App',
-      description: 'Aplikacja do zarządzania zadaniami z funkcjami drag & drop, kalendarzem i współpracą zespołową.',
-      technologies: [
-        { name: 'React', icon: FaReact, color: 'text-blue-400' },
-        { name: 'JavaScript', icon: FaJs, color: 'text-yellow-400' },
-        { name: 'CSS3', icon: FaCss3Alt, color: 'text-blue-500' }
-      ],
-      github: 'https://github.com/mariuszurban/task-manager',
-      demo: 'https://task-manager-demo.vercel.app',
-      image: '/api/placeholder/400/250'
-    },
-    {
-      title: 'Weather App',
-      description: 'Responsywna aplikacja pogodowa z prognozą na 7 dni, mapami i powiadomieniami o pogodzie.',
-      technologies: [
-        { name: 'React', icon: FaReact, color: 'text-blue-400' },
-        { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-400' },
-        { name: 'Tailwind', icon: SiTailwindcss, color: 'text-cyan-400' }
-      ],
-      github: 'https://github.com/mariuszurban/weather-app',
-      demo: 'https://weather-app-demo.vercel.app',
-      image: '/api/placeholder/400/250'
-    },
+    
     {
       title: 'Portfolio Website',
       description: 'Responsywne portfolio z animacjami, dark mode i systemem kontaktowym.',
@@ -71,10 +48,10 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">
-            Moje Projekty
+            My Projects
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Oto kilka projektów, nad którymi pracowałem. Każdy z nich przedstawia różne aspekty moich umiejętności.
+            Here are some projects I've worked on. Each one showcases different aspects of my skills.
           </p>
           <div className="w-20 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
         </motion.div>
@@ -190,16 +167,16 @@ export default function Projects() {
           className="text-center mt-16"
         >
           <p className="text-gray-400 mb-6">
-            Chcesz zobaczyć więcej moich projektów?
+            Interested in my projects?
           </p>
           <a
-            href="https://github.com/mariuszurban"
+            href="https://github.com/Korzengwiezdny"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 border border-gray-600 hover:border-gray-500"
           >
             <FaGithub />
-            Zobacz wszystkie na GitHub
+            Check me out on GitHub
           </a>
         </motion.div>
       </div>

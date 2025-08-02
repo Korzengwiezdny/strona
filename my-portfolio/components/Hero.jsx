@@ -31,7 +31,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-4"
           >
-            <span className="text-blue-400 text-lg font-medium">Cześć, jestem</span>
+            <span className="text-blue-400 text-lg font-medium">Hi, I'm</span>
           </motion.div>
 
           {/* Imię i nazwisko */}
@@ -51,7 +51,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-2xl md:text-4xl font-semibold text-gray-300 mb-6"
           >
-            Frontend Developer
+            Aspiring DevOps Engineer
           </motion.h2>
 
           {/* Opis */}
@@ -60,10 +60,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl leading-relaxed"
+          //Przerob na debops enginier
           >
-            Specjalizuję się w tworzeniu nowoczesnych, responsywnych aplikacji webowych 
-            z wykorzystaniem najnowszych technologii. Pasjonuję się czystym kodem i 
-            doskonałym user experience.
+            I am a passionate DevOps Engineer with a focus on automation, optimization, and continuous improvement. I thrive on solving complex problems and delivering high-quality software solutions.
           </motion.p>
 
           {/* Przyciski akcji */}
@@ -78,7 +77,7 @@ export default function Hero() {
               className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-blue-500/25"
             >
               <FaCode className="text-lg" />
-              Zobacz moje projekty
+              My Projects
               <FaArrowDown className="text-sm group-hover:translate-y-1 transition-transform duration-300" />
             </button>
             
@@ -87,30 +86,12 @@ export default function Hero() {
               className="group border-2 border-gray-600 hover:border-blue-400 text-gray-300 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3 hover:bg-blue-400/10"
             >
               <FaRocket className="text-lg" />
-              Rozpocznijmy współpracę
+              Contact Me
             </a>
           </motion.div>
-
+     
           {/* Statystyki/highlights */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="grid grid-cols-3 gap-8 max-w-md"
-          >
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400">3+</div>
-              <div className="text-sm text-gray-400">Lata doświadczenia</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400">20+</div>
-              <div className="text-sm text-gray-400">Projektów</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400">100%</div>
-              <div className="text-sm text-gray-400">Zaangażowania</div>
-            </div>
-          </motion.div>
+          
         </motion.div>
       </div>
 

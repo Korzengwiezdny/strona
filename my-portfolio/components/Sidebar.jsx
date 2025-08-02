@@ -21,13 +21,13 @@ export default function Sidebar() {
   const socialLinks = [
     {
       icon: FaGithub,
-      href: 'https://github.com/mariuszurban',
+      href: 'https://github.com/Korzengwiezdny',
       label: 'GitHub',
       color: 'hover:text-gray-300'
     },
     {
       icon: FaLinkedin,
-      href: 'https://linkedin.com/in/mariuszurban',
+      href: 'https://www.linkedin.com/in/mariusz-urban-561b8b372/',
       label: 'LinkedIn',
       color: 'hover:text-blue-400'
     }

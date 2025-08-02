@@ -12,12 +12,12 @@ export default function Footer() {
   const socialLinks = React.useMemo(() => [
     {
       icon: FaGithub,
-      url: 'https://github.com/mariuszurban',
+      url: 'https://github.com/Korzengwiezdny',
       label: 'GitHub'
     },
     {
       icon: FaLinkedin,
-      url: 'https://linkedin.com/in/mariuszurban',
+      url: 'https://linkedin.com/in/mariusz-urban-561b8b372/',
       label: 'LinkedIn'
     }
   ], []);
@@ -29,12 +29,12 @@ export default function Footer() {
           {/* Logo/Nazwa */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-white mb-2">Mariusz Urban</h3>
-            <p className="text-gray-400">Frontend Developer</p>
+            <p className="text-gray-400">DevOps Engineer</p>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">
-            <span className="text-gray-400 text-sm">Znajdź mnie:</span>
+            <span className="text-gray-400 text-sm">Find me:</span>
             {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
@@ -70,12 +70,11 @@ export default function Footer() {
         <div className="border-t border-gray-700/50 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p className="flex items-center gap-2">
-              &copy; {new Date().getFullYear()} Mariusz Urban. Stworzone z 
-              <FaHeart className="text-red-400 text-xs" />
-              w React & Next.js
+              &copy; {new Date().getFullYear()} Mariusz Urban. Created with
+              <FaHeart className="text-red-400 text-xs" /> in React & Next.js
             </p>
             <p>
-              Wszystkie prawa zastrzeżone.
+              All rights reserved.
             </p>
           </div>
         </div>

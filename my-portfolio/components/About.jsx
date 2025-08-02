@@ -7,34 +7,36 @@ import { FaCode, FaLightbulb, FaUsers, FaRocket } from 'react-icons/fa';
 export default function About() {
   // Memoizacja danych dla lepszej wydajności
   const skills = React.useMemo(() => [
-    'React & Next.js',
-    'TypeScript',
-    'Tailwind CSS',
-    'Node.js',
+    'Bash Scripting',
     'Git & GitHub',
-    'Responsive Design'
+    'AWS (EC2, S3, Lambda)',
+    'Jenkins',
+    'Docker',
+    'CI/CD',
+    'Kubernetes',
+    'Terraform',
   ], []);
 
   const values = React.useMemo(() => [
     {
       icon: FaCode,
-      title: 'Czysty kod',
-      description: 'Piszę czytelny, maintainable kod zgodny z najlepszymi praktykami'
+      title: 'Clean Code',
+      description: 'I write readable, maintainable code that adheres to best practices'
     },
     {
       icon: FaLightbulb,
-      title: 'Innowacyjność',
-      description: 'Zawsze szukam nowych rozwiązań i najnowszych technologii'
+      title: 'Innovation',
+      description: 'I am always looking for new solutions and the latest technologies'
     },
     {
       icon: FaUsers,
-      title: 'Współpraca',
-      description: 'Cenię sobie pracę w zespole i otwartą komunikację'
+      title: 'Collaboration',
+      description: 'I value teamwork and open communication'
     },
     {
       icon: FaRocket,
-      title: 'Wydajność',
-      description: 'Optymalizuję aplikacje pod kątem szybkości i user experience'
+      title: 'Performance',
+      description: 'I optimize applications for speed and user experience'
     }
   ], []);
 
@@ -50,7 +52,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">
-            O mnie
+            About me
           </h2>
           <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
         </motion.div>
@@ -64,32 +66,32 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-white">
-              Frontend Developer z pasją do tworzenia
+              DevOps Engineer with a passion for automation and optimization
             </h3>
             
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
-                Jestem frontend developerem z ponad 3-letnim doświadczeniem w tworzeniu 
-                nowoczesnych aplikacji webowych. Specjalizuję się w React, Next.js i 
-                ekosystemie JavaScript/TypeScript.
+                I am a computer science student with hands-on experience in various
+                DevOps tools and practices. My goal is to streamline development
+                processes and improve collaboration between teams.
               </p>
               
               <p>
-                Moją pasją jest przekształcanie pomysłów w funkcjonalne, piękne i 
-                intuicyjne interfejsy użytkownika. Zawsze staram się być na bieżąco 
-                z najnowszymi trendami i technologiami w świecie web developmentu.
+                My passion for technology drives me to continuously learn and adapt to
+                new challenges. I enjoy automating repetitive tasks, optimizing workflows,
+                and ensuring that applications run smoothly in production environments.
               </p>
               
               <p>
-                Poza programowaniem interesuję się UX/UI designem, co pozwala mi 
-                lepiej rozumieć potrzeby użytkowników i tworzyć bardziej przemyślane 
-                rozwiązania.
+                I believe that a strong foundation in both development and operations is
+                essential for delivering high-quality software. I am committed to writing
+                clean, maintainable code and following best practices in all my projects.
               </p>
             </div>
 
             {/* Umiejętności */}
             <div className="mt-8">
-              <h4 className="text-xl font-semibold mb-4 text-white">Główne technologie:</h4>
+              <h4 className="text-xl font-semibold mb-4 text-white">Main technologies:</h4>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
                   <motion.span
@@ -116,7 +118,7 @@ export default function About() {
             className="space-y-6"
           >
             <h4 className="text-2xl font-semibold mb-8 text-white text-center lg:text-left">
-              Moje wartości
+              My values
             </h4>
             
             {values.map((value, index) => {
