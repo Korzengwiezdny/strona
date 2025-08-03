@@ -21,16 +21,16 @@ export default function Projects() {
       image: '/api/placeholder/400/250',
       featured: true
     },
-    
+   
     {
       title: 'Portfolio Website',
-      description: 'Responsywne portfolio z animacjami, dark mode i systemem kontaktowym.',
+      description: 'Responsive portfolio with animations, dark mode, and a contact system.',
       technologies: [
         { name: 'Next.js', icon: SiNextdotjs, color: 'text-white' },
         { name: 'Tailwind', icon: SiTailwindcss, color: 'text-cyan-400' },
         { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-400' }
       ],
-      github: 'https://github.com/mariuszurban/portfolio',
+      github: 'https://github.com/Korzengwiezdny/strona',
       demo: 'https://mariuszurban.dev',
       image: '/api/placeholder/400/250'
     }
@@ -107,7 +107,7 @@ export default function Projects() {
                   </h3>
                   {project.featured && (
                     <span className="bg-blue-600/20 text-blue-400 text-xs px-2 py-1 rounded-full border border-blue-500/30">
-                      Wyróżniony
+                      Featured
                     </span>
                   )}
                 </div>
@@ -141,7 +141,7 @@ export default function Projects() {
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
                   >
                     <FaGithub />
-                    Kod źródłowy
+                    Source Code
                   </a>
                   <a
                     href={project.demo}

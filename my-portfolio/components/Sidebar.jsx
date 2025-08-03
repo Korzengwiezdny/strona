@@ -13,9 +13,9 @@ export default function Sidebar() {
 
   const menuItems = [
     { id: 'home', icon: FaHome, label: 'Home', href: '#home' },
-    { id: 'about', icon: FaUser, label: 'O mnie', href: '#about' },
-    { id: 'projects', icon: FaCode, label: 'Projekty', href: '#projects' },
-    { id: 'contact', icon: FaEnvelope, label: 'Kontakt', href: '#contact' },
+    { id: 'about', icon: FaUser, label: 'About me', href: '#about' },
+    { id: 'projects', icon: FaCode, label: 'Projects', href: '#projects' },
+    { id: 'contact', icon: FaEnvelope, label: 'Contact', href: '#contact' },
   ];
 
   const socialLinks = [
